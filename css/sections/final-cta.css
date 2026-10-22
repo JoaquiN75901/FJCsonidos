@@ -1,0 +1,18 @@
+/* ---------- CTA final ---------- */
+.final-cta {
+  padding-block: clamp(3.5rem, 2.5rem + 4vw, 5.5rem);
+  background: var(--grad-brand);
+}
+.final-cta__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.final-cta h2 {
+  font-size: var(--fs-xl);
+  font-weight: 900;
+  font-style: italic;
+  max-width: 640px;
+}

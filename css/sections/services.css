@@ -1,0 +1,42 @@
+/* ---------- Servicios ---------- */
+.services { background: var(--c-bg-2); }
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.25rem;
+}
+
+.service {
+  padding: 2rem 1.6rem;
+  transition: transform 0.3s var(--ease), border-color 0.3s;
+}
+.service:hover { transform: translateY(-6px); border-color: rgba(139, 61, 255, 0.5); }
+
+.service__icon {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  margin-bottom: 1.4rem;
+}
+.service__icon svg { width: 28px; height: 28px; fill: currentColor; }
+.service__icon--violet { background: rgba(139, 61, 255, 0.16); color: var(--c-violet); }
+.service__icon--gold   { background: rgba(245, 183, 0, 0.14);  color: var(--c-gold); }
+.service__icon--cyan   { background: rgba(52, 184, 255, 0.14); color: var(--c-cyan); }
+
+.service__title { font-size: 1.4rem; font-weight: 800; }
+.service__text { margin-top: 0.6rem; color: var(--c-muted); font-size: var(--fs-sm); }
+
+.service__list {
+  margin: 1.2rem 0 0;
+  padding: 1.2rem 0 0;
+  border-top: 1px solid var(--c-border);
+  list-style: none;
+  display: grid;
+  gap: 0.45rem;
+  font-size: var(--fs-sm);
+}
+.service__list li { display: flex; gap: 0.6rem; }
+.service__list li::before { content: "✓"; color: var(--c-cyan); font-weight: 700; }

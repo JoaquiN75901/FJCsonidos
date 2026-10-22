@@ -1,0 +1,39 @@
+/* ---------- Footer ---------- */
+.site-footer {
+  padding: 3.5rem 0 6rem;
+  border-top: 1px solid var(--c-border);
+  text-align: center;
+}
+.site-footer__inner { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+.site-footer__tagline {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: var(--fs-sm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--c-gold);
+}
+.site-footer__links { display: flex; gap: 1.5rem; margin: 0.5rem 0 0; padding: 0; list-style: none; }
+.site-footer__links a { color: var(--c-muted); text-decoration: none; font-size: var(--fs-sm); }
+.site-footer__links a:hover { color: var(--c-cyan); }
+.site-footer__copy { font-size: var(--fs-xs); color: #6f6789; }
+
+.logo--sm .logo__mark { font-size: 1.5rem; }
+
+/* ---------- Botón flotante de WhatsApp ---------- */
+.wa-float {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 60;
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--c-whatsapp);
+  color: #fff;
+  box-shadow: 0 10px 30px -8px rgba(37, 211, 102, 0.7);
+  transition: transform 0.2s var(--ease);
+}
+.wa-float:hover { transform: scale(1.08); }

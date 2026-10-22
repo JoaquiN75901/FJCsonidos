@@ -1,0 +1,38 @@
+/* ---------- Cinta de tipos de evento ---------- */
+.marquee {
+  overflow: hidden;
+  padding: 1.1rem 0;
+  background: var(--c-violet);
+  transform: rotate(-1.2deg);
+  margin: -1rem -2vw 0;
+  position: relative;
+  z-index: 2;
+}
+.marquee__track {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+.marquee__track span {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-right: 2rem;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-style: italic;
+  font-size: clamp(1.1rem, 0.9rem + 1vw, 1.6rem);
+  text-transform: uppercase;
+  color: #fff;
+  white-space: nowrap;
+}
+.marquee__track span::after {
+  content: "✦";
+  color: var(--c-gold);
+  font-style: normal;
+  font-size: 0.8em;
+}
+
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}

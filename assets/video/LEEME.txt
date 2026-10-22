@@ -1,0 +1,2 @@
+Poné acá el showreel en .mp4 (ej: showreel.mp4).
+Después se carga en js/config.js → showreel.videoSrc: "assets/video/showreel.mp4"

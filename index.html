@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FJC Sonido · Sonido, iluminación y DJ para eventos inolvidables</title>
+  <meta name="description" content="Sonido, iluminación, humo y DJ para cumpleaños, fiestas, peñas, bandas y eventos de empresa. Pedí tu presupuesto sin compromiso.">
+  <meta name="theme-color" content="#0b0814">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+  <!-- Open Graph (cómo se ve el link al compartirlo por WhatsApp / redes) -->
+  <meta property="og:title" content="FJC Sonido · Para eventos inolvidables">
+  <meta property="og:description" content="Sonido, iluminación, humo y DJ para tu fiesta. Pedí tu presupuesto.">
+  <meta property="og:type" content="website">
+  <!-- <meta property="og:image" content="assets/img/og-image.jpg"> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;0,700;0,800;0,900;1,800;1,900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top" data-header>
+    <div class="container site-header__inner">
+      <a href="#top" class="logo" aria-label="FJC Sonido, inicio">
+        <span class="logo__mark">F<span class="logo__j">J</span>C</span>
+        <span class="logo__sub">Sonido</span>
+      </a>
+
+      <nav class="nav" id="nav" data-nav aria-label="Principal">
+        <a href="#servicios" class="nav__link">Servicios</a>
+        <a href="#trabajos" class="nav__link">Trabajos</a>
+        <a href="#por-que" class="nav__link">Por qué FJC</a>
+        <a href="#faq" class="nav__link">Preguntas</a>
+        <a href="#presupuesto" class="btn btn--primary btn--sm nav__cta">Pedir presupuesto</a>
+      </nav>
+
+      <button class="nav-toggle" data-nav-toggle aria-controls="nav" aria-expanded="false" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__beams" aria-hidden="true">
+        <span class="beam beam--1"></span>
+        <span class="beam beam--2"></span>
+        <span class="beam beam--3"></span>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content" data-reveal>
+          <p class="eyebrow">Sonido · Iluminación · Humo · DJ</p>
+          <h1 class="hero__title" id="hero-title">
+            Tu fiesta, con el sonido que <span class="text-gold">se merece.</span>
+          </h1>
+          <p class="hero__lead">
+            Equipamos cumpleaños, fiestas, peñas, shows de bandas y eventos de empresa.
+            Llegamos, montamos y nos encargamos de todo para que vos solo disfrutes.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#presupuesto" class="btn btn--primary btn--lg">Pedí tu presupuesto gratis</a>
+            <a href="#showreel" class="btn btn--ghost btn--lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+              Ver showreel
+            </a>
+          </div>
+
+          <ul class="hero__trust">
+            <li>Respuesta en menos de 24 h</li>
+            <li>Sin compromiso</li>
+            <li>Presupuesto a medida</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="eq" data-eq></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. TIPOS DE EVENTO (marquee) ============ -->
+    <div class="marquee" aria-label="Tipos de eventos">
+      <div class="marquee__track">
+        <span>Cumpleaños</span><span>Peñas</span><span>Bandas en vivo</span><span>Eventos de empresa</span><span>Casamientos</span><span>Reuniones</span><span>Fiestas privadas</span>
+        <span aria-hidden="true">Cumpleaños</span><span aria-hidden="true">Peñas</span><span aria-hidden="true">Bandas en vivo</span><span aria-hidden="true">Eventos de empresa</span><span aria-hidden="true">Casamientos</span><span aria-hidden="true">Reuniones</span><span aria-hidden="true">Fiestas privadas</span>
+      </div>
+    </div>
+
+    <!-- ============ 3. SHOWREEL ============ -->
+    <section class="section showreel" id="showreel" aria-labelledby="showreel-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Showreel</p>
+          <h2 class="section-title" id="showreel-title">Mirá cómo se vive una fiesta con FJC</h2>
+        </header>
+
+        <div class="showreel__frame" data-showreel data-reveal>
+          <!-- El contenido lo arma js/modules/showreel.js según config.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. SERVICIOS ============ -->
+    <section class="section services" id="servicios" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Servicios</p>
+          <h2 class="section-title" id="services-title">Todo lo que tu evento necesita, en un solo lugar</h2>
+          <p class="section-lead">Contratá un servicio o armá el combo completo. Nos adaptamos al tamaño del lugar y a la cantidad de invitados.</p>
+        </header>
+
+        <div class="services__grid">
+          <article class="card service" data-reveal>
+            <div class="service__icon service__icon--violet">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm0 5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z"/></svg>
+            </div>
+            <h3 class="service__title">Sonido</h3>
+            <p class="service__text">Equipos profesionales dimensionados para tu salón o espacio abierto. Sonido claro y potente, sin distorsión.</p>
+            <ul class="service__list">
+              <li>Bafles y subwoofers</li>
+              <li>Micrófonos inalámbricos</li>
+              <li>Sonido para bandas en vivo</li>
+            </ul>
+          </article>
+
+          <article class="card service" data-reveal>
+            <div class="service__icon service__icon--gold">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 1 4 12.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26A7 7 0 0 1 12 2Zm-3 18h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-1Z"/></svg>
+            </div>
+            <h3 class="service__title">Iluminación</h3>
+            <p class="service__text">Luces robóticas, láser y ambientación con los colores que elijas. Cada momento de la noche, con su propio clima.</p>
+            <ul class="service__list">
+              <li>Cabezas móviles y láser</li>
+              <li>Luz ambiental para el salón</li>
+              <li>Show de luces para la entrada</li>
+            </ul>
+          </article>
+
+          <article class="card service" data-reveal>
+            <div class="service__icon service__icon--cyan">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 19a4.5 4.5 0 0 1-.42-8.98 6 6 0 0 1 11.6-1.33A5 5 0 0 1 17.5 19h-11Z"/></svg>
+            </div>
+            <h3 class="service__title">Humo y efectos</h3>
+            <p class="service__text">Máquinas de humo, niebla baja y efectos especiales para los momentos que todos van a filmar.</p>
+            <ul class="service__list">
+              <li>Humo y niebla baja</li>
+              <li>Efectos para el vals o la entrada</li>
+              <li>Coordinado con las luces</li>
+            </ul>
+          </article>
+
+          <article class="card service" data-reveal>
+            <div class="service__icon service__icon--violet">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-9 9v5a3 3 0 0 0 3 3h1a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1H5v-0a7 7 0 0 1 14 0h-2a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h1a3 3 0 0 0 3-3v-5a9 9 0 0 0-9-9Z"/></svg>
+            </div>
+            <h3 class="service__title">DJ</h3>
+            <p class="service__text">DJ que lee la pista y arma la música con vos antes del evento: tus temas, tus momentos, cero baches.</p>
+            <ul class="service__list">
+              <li>Lista armada con vos</li>
+              <li>Musicalización de momentos clave</li>
+              <li>Técnicos durante toda la noche</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. PARA QUIÉN ============ -->
+    <section class="section audience" aria-labelledby="audience-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Para quién</p>
+          <h2 class="section-title" id="audience-title">¿Qué estás organizando?</h2>
+        </header>
+
+        <div class="audience__grid">
+          <a href="#presupuesto" class="audience__card" data-preset-event="Cumpleaños" data-reveal>
+            <span class="audience__tag">Fiestas</span>
+            <h3>Cumpleaños y fiestas</h3>
+            <p>Entrada, vals, carnaval carioca: armamos cada momento para que la noche salga perfecta.</p>
+            <span class="audience__link">Cotizar mi fiesta →</span>
+          </a>
+          <a href="#presupuesto" class="audience__card" data-preset-event="Show de banda / artista" data-reveal>
+            <span class="audience__tag">Artistas</span>
+            <h3>Bandas y artistas</h3>
+            <p>Sonido en vivo, monitoreo y técnico en consola para que suenes como en el estudio.</p>
+            <span class="audience__link">Cotizar mi show →</span>
+          </a>
+          <a href="#presupuesto" class="audience__card" data-preset-event="Evento de empresa" data-reveal>
+            <span class="audience__tag">Empresas</span>
+            <h3>Eventos de empresa</h3>
+            <p>Presentaciones, fiestas de fin de año y lanzamientos. Puntualidad, prolijidad y factura.</p>
+            <span class="audience__link">Cotizar mi evento →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. TRABAJOS ============ -->
+    <section class="section work" id="trabajos" aria-labelledby="work-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Trabajos</p>
+          <h2 class="section-title" id="work-title">Algunas noches que hicimos sonar</h2>
+        </header>
+
+        <div class="work__filters" role="tablist" aria-label="Filtrar trabajos" data-work-filters></div>
+        <div class="work__grid" data-work-grid></div>
+
+        <p class="work__more" data-reveal>
+          ¿Querés ver más? <a href="#" data-instagram-link target="_blank" rel="noopener">Seguinos en Instagram</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ 7. POR QUÉ FJC ============ -->
+    <section class="section why" id="por-que" aria-labelledby="why-title">
+      <div class="container why__inner">
+        <header class="section-head section-head--left" data-reveal>
+          <p class="eyebrow">Por qué FJC Sonido</p>
+          <h2 class="section-title" id="why-title">No alquilás equipos. Contratás tranquilidad.</h2>
+          <p class="section-lead">El día del evento no tenés tiempo para preocuparte por cables o micrófonos. Para eso estamos nosotros.</p>
+          <a href="#presupuesto" class="btn btn--primary">Quiero mi presupuesto</a>
+        </header>
+
+        <ul class="why__list">
+          <li class="why__item" data-reveal>
+            <span class="why__num">01</span>
+            <div>
+              <h3>Llegamos antes, siempre</h3>
+              <p>Montamos y probamos todo con tiempo. Cuando entra el primer invitado, ya está todo sonando.</p>
+            </div>
+          </li>
+          <li class="why__item" data-reveal>
+            <span class="why__num">02</span>
+            <div>
+              <h3>Todo en un solo proveedor</h3>
+              <p>Sonido, luces, humo y DJ coordinados por el mismo equipo. Un solo contacto, cero desencuentros.</p>
+            </div>
+          </li>
+          <li class="why__item" data-reveal>
+            <span class="why__num">03</span>
+            <div>
+              <h3>Técnicos toda la noche</h3>
+              <p>No te dejamos los equipos y nos vamos: estamos durante todo el evento resolviendo lo que haga falta.</p>
+            </div>
+          </li>
+          <li class="why__item" data-reveal>
+            <span class="why__num">04</span>
+            <div>
+              <h3>Presupuesto claro, sin sorpresas</h3>
+              <p>Te pasamos un detalle de lo que incluye. Lo que acordamos es lo que pagás.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 8. CÓMO TRABAJAMOS ============ -->
+    <section class="section process" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Cómo trabajamos</p>
+          <h2 class="section-title" id="process-title">Reservar tu fecha es así de simple</h2>
+        </header>
+
+        <ol class="process__steps">
+          <li class="process__step" data-reveal>
+            <span class="process__badge">1</span>
+            <h3>Contanos tu evento</h3>
+            <p>Completá el formulario con la fecha, el lugar y lo que necesitás. Te lleva un minuto.</p>
+          </li>
+          <li class="process__step" data-reveal>
+            <span class="process__badge">2</span>
+            <h3>Recibí tu presupuesto</h3>
+            <p>Te respondemos por WhatsApp con una propuesta a medida en menos de 24 horas.</p>
+          </li>
+          <li class="process__step" data-reveal>
+            <span class="process__badge">3</span>
+            <h3>Disfrutá tu fiesta</h3>
+            <p>Reservás la fecha y nosotros nos ocupamos del resto: montaje, show y desarme.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 9. CTA + FORMULARIO ============ -->
+    <section class="section contact" id="presupuesto" aria-labelledby="contact-title">
+      <div class="container contact__inner">
+        <div class="contact__pitch" data-reveal>
+          <p class="eyebrow">Presupuesto sin compromiso</p>
+          <h2 class="section-title" id="contact-title">Contanos tu evento y te armamos la propuesta</h2>
+          <p class="section-lead">Las fechas de fin de semana se reservan rápido. Consultá ahora y asegurá la tuya.</p>
+
+          <ul class="contact__perks">
+            <li>Respuesta en menos de 24 h</li>
+            <li>Propuesta a medida de tu evento</li>
+            <li>Sin costo y sin compromiso</li>
+          </ul>
+
+          <div class="contact__alt">
+            <p>¿Preferís hablar directo?</p>
+            <a href="#" class="btn btn--whatsapp" data-whatsapp-link target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9 0-1.4.7-2 1-2.3.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3Z"/></svg>
+              Escribinos por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <form class="form card" data-quote-form novalidate data-reveal>
+          <div class="form__row">
+            <div class="field">
+              <label for="f-name">Nombre *</label>
+              <input id="f-name" name="nombre" type="text" autocomplete="name" required placeholder="Tu nombre">
+              <p class="field__error" data-error-for="nombre"></p>
+            </div>
+            <div class="field">
+              <label for="f-phone">WhatsApp *</label>
+              <input id="f-phone" name="telefono" type="tel" autocomplete="tel" inputmode="tel" required placeholder="Ej: 351 123 4567">
+              <p class="field__error" data-error-for="telefono"></p>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="f-event">Tipo de evento *</label>
+              <select id="f-event" name="evento" required data-event-select>
+                <option value="">Elegí una opción</option>
+              </select>
+              <p class="field__error" data-error-for="evento"></p>
+            </div>
+            <div class="field">
+              <label for="f-date">Fecha del evento</label>
+              <input id="f-date" name="fecha" type="date">
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="f-guests">Cantidad de invitados</label>
+              <select id="f-guests" name="invitados">
+                <option value="">Aproximado</option>
+                <option>Hasta 50</option>
+                <option>50 a 100</option>
+                <option>100 a 200</option>
+                <option>200 a 400</option>
+                <option>Más de 400</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-place">Localidad / salón</label>
+              <input id="f-place" name="lugar" type="text" placeholder="¿Dónde es el evento?">
+            </div>
+          </div>
+
+          <fieldset class="field">
+            <legend>¿Qué necesitás?</legend>
+            <div class="chips" data-service-chips></div>
+          </fieldset>
+
+          <div class="field">
+            <label for="f-msg">Contanos un poco más</label>
+            <textarea id="f-msg" name="mensaje" rows="3" placeholder="Horario, si es al aire libre, música que te gusta…"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg btn--block" data-submit>
+            Quiero mi presupuesto
+          </button>
+          <p class="form__note">Te respondemos por WhatsApp. No compartimos tus datos.</p>
+
+          <div class="form__success" data-form-success hidden>
+            <p class="form__success-title">¡Listo! Recibimos tu consulta.</p>
+            <p>Te escribimos a la brevedad con tu presupuesto. Si no se abrió WhatsApp, <a href="#" data-whatsapp-retry target="_blank" rel="noopener">tocá acá</a>.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ 10. FAQ ============ -->
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="container container--narrow">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Preguntas frecuentes</p>
+          <h2 class="section-title" id="faq-title">Lo que todos nos preguntan</h2>
+        </header>
+
+        <div class="faq__list" data-reveal>
+          <details class="faq__item">
+            <summary>¿Con cuánta anticipación tengo que reservar?</summary>
+            <p>Para fiestas de fin de semana recomendamos consultar con 1 a 3 meses de anticipación, sobre todo en temporada alta. Igual escribinos aunque falte poco: si tenemos la fecha libre, la armamos.</p>
+          </details>
+          <details class="faq__item">
+            <summary>¿Puedo contratar solo sonido o solo DJ?</summary>
+            <p>Sí. Podés contratar cada servicio por separado o el combo completo. Te armamos el presupuesto con lo que realmente necesitás.</p>
+          </details>
+          <details class="faq__item">
+            <summary>¿Se encargan del montaje y el desarme?</summary>
+            <p>Sí, llegamos con tiempo, montamos, probamos todo y al final desarmamos. Vos no tenés que ocuparte de nada técnico.</p>
+          </details>
+          <details class="faq__item">
+            <summary>¿Trabajan fuera de la ciudad?</summary>
+            <p>Sí, viajamos. Contanos la localidad en el formulario y lo incluimos en el presupuesto.</p>
+          </details>
+          <details class="faq__item">
+            <summary>¿Cómo reservo la fecha?</summary>
+            <p>Una vez que aprobás el presupuesto, se confirma la fecha con una seña. Te pasamos todos los detalles por WhatsApp.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="final-cta" aria-label="Pedir presupuesto">
+      <div class="container final-cta__inner" data-reveal>
+        <h2>¿Ya tenés fecha? <span class="text-gold">Asegurala hoy.</span></h2>
+        <a href="#presupuesto" class="btn btn--gold btn--lg">Pedir presupuesto</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <a href="#top" class="logo logo--sm" aria-label="FJC Sonido, volver arriba">
+        <span class="logo__mark">F<span class="logo__j">J</span>C</span>
+        <span class="logo__sub">Sonido</span>
+      </a>
+      <p class="site-footer__tagline">Para eventos inolvidables</p>
+      <ul class="site-footer__links">
+        <li><a href="#" data-whatsapp-link target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="#" data-instagram-link target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="#" data-email-link>Email</a></li>
+      </ul>
+      <p class="site-footer__copy">© <span data-year></span> FJC Sonido. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="#" class="wa-float" data-whatsapp-link target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9 0-1.4.7-2 1-2.3.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3Z"/></svg>
+  </a>
+
+  <!-- Configuración y datos (editá estos archivos para cambiar contenido) -->
+  <script src="js/config.js"></script>
+  <script src="js/data/works.js"></script>
+
+  <!-- Módulos -->
+  <script src="js/modules/contact-links.js"></script>
+  <script src="js/modules/nav.js"></script>
+  <script src="js/modules/reveal.js"></script>
+  <script src="js/modules/equalizer.js"></script>
+  <script src="js/modules/showreel.js"></script>
+  <script src="js/modules/works.js"></script>
+  <script src="js/modules/quote-form.js"></script>
+
+  <!-- Arranque -->
+  <script src="js/main.js"></script>
+</body>
+</html>

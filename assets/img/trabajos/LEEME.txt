@@ -1,0 +1,2 @@
+Poné acá las fotos de tus eventos (.jpg, verticales 4:5, menos de 500 KB).
+Después se cargan en js/data/works.js, en el campo "image" de cada trabajo.

@@ -1,0 +1,98 @@
+/* ---------- Trabajos ---------- */
+.work { background: var(--c-bg-2); }
+
+.work__filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.work__filter {
+  padding: 0.55rem 1.1rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--c-border-strong);
+  background: transparent;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.work__filter:hover { border-color: var(--c-violet); }
+.work__filter[aria-selected="true"] { background: var(--c-violet); border-color: var(--c-violet); color: #fff; }
+
+.work__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.work-card {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--grad-brand);
+  isolation: isolate;
+}
+.work-card.is-hidden { display: none; }
+
+.work-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  transition: transform 0.6s var(--ease);
+}
+.work-card:hover img { transform: scale(1.06); }
+
+/* Placeholder mientras no haya foto */
+.work-card__placeholder {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  display: grid;
+  place-items: center;
+  color: rgba(255, 255, 255, 0.18);
+}
+.work-card__placeholder svg { width: 38%; }
+.work-card[data-tone="cyan"] { background: linear-gradient(135deg, #0d2b4d, #1767a8 60%, #34b8ff); }
+.work-card[data-tone="gold"] { background: linear-gradient(135deg, #3a2405, #8a5a00 60%, #f5b700); }
+
+.work-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(to top, rgba(11, 8, 20, 0.92), transparent 55%);
+}
+
+.work-card__body {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 1.25rem;
+}
+.work-card__cat {
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--c-gold);
+}
+.work-card__title { margin-top: 0.3rem; font-size: 1.2rem; font-weight: 800; }
+.work-card__meta { margin-top: 0.25rem; font-size: var(--fs-xs); color: var(--c-muted); }
+
+/* Celular: 2 columnas, tarjetas más compactas */
+@media (max-width: 560px) {
+  .work__grid { grid-template-columns: repeat(2, 1fr); gap: 0.6rem; }
+  .work-card { aspect-ratio: 3 / 4; border-radius: var(--radius-sm); }
+  .work-card__body { padding: 0.75rem; }
+  .work-card__cat { font-size: 0.65rem; letter-spacing: 0.06em; }
+  .work-card__title { font-size: 0.95rem; }
+  .work-card__meta { font-size: 0.7rem; line-height: 1.35; }
+}
+
+.work__more { margin-top: 2.25rem; text-align: center; color: var(--c-muted); }
+.work__more a { color: var(--c-cyan); font-weight: 600; }

@@ -1,0 +1,21 @@
+CARPETA DE FOTOS Y VIDEOS — FJC SONIDO
+======================================
+
+Subí acá tus archivos y avisame (o editá vos los archivos indicados):
+
+  assets/img/trabajos/   → fotos de tus eventos (para la sección "Trabajos")
+                           Formato .jpg, idealmente verticales (4:5), menos de 500 KB cada una.
+                           Se cargan en js/data/works.js, campo "image".
+                           Ejemplo: image: "assets/img/trabajos/banda-en-vivo.jpg"
+
+  assets/img/            → portada del showreel (showreel-poster.jpg)
+                           e imagen para compartir el link (og-image.jpg, 1200x630).
+
+  assets/video/          → el showreel en .mp4 (ej: showreel.mp4).
+                           Se carga en js/config.js → showreel.videoSrc
+                           Recomendado: subirlo a YouTube y poner solo el ID en
+                           showreel.youtubeId (carga más rápido y no pesa en el hosting).
+
+Consejos:
+- Nombres de archivo sin espacios ni tildes: "cumple-sofia.jpg", no "Cumple Sofía.jpg".
+- Comprimí las fotos antes de subirlas (por ejemplo en squoosh.app).

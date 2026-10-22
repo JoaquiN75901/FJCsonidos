@@ -1,0 +1,50 @@
+/* ---------- Cómo trabajamos ---------- */
+.process { background: var(--c-bg-2); }
+
+.process__steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  counter-reset: none;
+  position: relative;
+}
+/* Línea que une los pasos */
+.process__steps::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 16%;
+  right: 16%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--c-violet), var(--c-cyan), var(--c-gold));
+  opacity: 0.5;
+}
+
+.process__step { position: relative; text-align: center; padding: 0 1rem; }
+.process__badge {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 1.4rem;
+  border-radius: 50%;
+  background: var(--c-bg);
+  border: 2px solid var(--c-violet);
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.3rem;
+  box-shadow: var(--glow-violet);
+}
+.process__step:nth-child(2) .process__badge { border-color: var(--c-cyan); }
+.process__step:nth-child(3) .process__badge { border-color: var(--c-gold); }
+
+.process__step h3 { font-size: 1.25rem; font-weight: 800; }
+.process__step p { margin-top: 0.5rem; color: var(--c-muted); font-size: var(--fs-sm); }
+
+@media (max-width: 760px) {
+  .process__steps { grid-template-columns: 1fr; gap: 2.25rem; }
+  .process__steps::before { display: none; }
+}

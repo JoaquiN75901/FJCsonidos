@@ -1,0 +1,37 @@
+/* ---------- Preguntas frecuentes ---------- */
+.faq { background: var(--c-bg-2); }
+
+.faq__list { display: grid; gap: 0.75rem; }
+
+.faq__item {
+  border-radius: var(--radius);
+  border: 1px solid var(--c-border);
+  background: var(--c-surface);
+  transition: border-color 0.2s;
+}
+.faq__item[open] { border-color: rgba(139, 61, 255, 0.5); }
+
+.faq__item summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem 1.4rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-md);
+  cursor: pointer;
+  list-style: none;
+}
+.faq__item summary::-webkit-details-marker { display: none; }
+.faq__item summary::after {
+  content: "+";
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--c-gold);
+  transition: transform 0.25s var(--ease);
+}
+.faq__item[open] summary::after { transform: rotate(45deg); }
+
+.faq__item p { padding: 0 1.4rem 1.3rem; color: var(--c-muted); font-size: var(--fs-sm); }

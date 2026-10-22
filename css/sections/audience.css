@@ -1,0 +1,44 @@
+/* ---------- Para quién ---------- */
+.audience__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.audience__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  min-height: 300px;
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--c-border);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(139, 61, 255, 0.35), transparent 55%),
+    var(--c-surface);
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform 0.3s var(--ease), border-color 0.3s;
+}
+.audience__card:nth-child(2) { background: radial-gradient(circle at 100% 0%, rgba(52, 184, 255, 0.28), transparent 55%), var(--c-surface); }
+.audience__card:nth-child(3) { background: radial-gradient(circle at 100% 0%, rgba(245, 183, 0, 0.22), transparent 55%), var(--c-surface); }
+.audience__card:hover { transform: translateY(-6px); border-color: var(--c-border-strong); }
+
+.audience__tag {
+  align-self: flex-start;
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--c-border-strong);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--c-muted);
+}
+.audience__card h3 { font-size: 1.6rem; font-weight: 900; font-style: italic; margin-top: auto; }
+.audience__card p { color: var(--c-muted); font-size: var(--fs-sm); }
+.audience__link {
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: var(--c-gold);
+  margin-top: 0.4rem;
+}

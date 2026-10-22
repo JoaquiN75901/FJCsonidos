@@ -1,0 +1,23 @@
+/* ==========================================================
+   FJC Sonido — hoja principal
+   Solo importa módulos. Para agregar una sección nueva:
+   creá css/sections/mi-seccion.css y sumalo acá.
+   ========================================================== */
+
+@import url("tokens.css");
+@import url("base.css");
+@import url("components.css");
+
+@import url("sections/header.css");
+@import url("sections/hero.css");
+@import url("sections/marquee.css");
+@import url("sections/showreel.css");
+@import url("sections/services.css");
+@import url("sections/audience.css");
+@import url("sections/work.css");
+@import url("sections/why.css");
+@import url("sections/process.css");
+@import url("sections/contact.css");
+@import url("sections/faq.css");
+@import url("sections/final-cta.css");
+@import url("sections/footer.css");
